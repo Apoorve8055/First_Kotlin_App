@@ -5,19 +5,22 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@drawable/bki"
+        android:visibility="visible">
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
-            android:id="@+id/editText" android:layout_marginTop="8dp"
+            android:id="@+id/editText"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="User Name" android:textColorHint="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.276"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.302"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +30,9 @@
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="@+id/editText" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.134"/>
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.134"
+            android:textColor="@color/colorPrimaryDark" android:hint="Password"
+            android:textColorHint="@color/colorPrimaryDark"/>
     <Button
             android:text="Login"
             android:layout_width="wrap_content"
@@ -36,16 +41,26 @@
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintVertical_bias="0.478"/>
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.518"/>
     <TextView
             android:text="Login Panel"
-            android:layout_width="92dp"
-            android:layout_height="22dp"
+            android:layout_width="94dp"
+            android:layout_height="29dp"
             android:id="@+id/textView" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
             app:layout_constraintVertical_bias="0.191" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+            android:layout_width="219dp"
+            android:layout_height="55dp"
+            android:id="@+id/textView2"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.869"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.646" android:textSize="12sp"/>
 </android.support.constraint.ConstraintLayout>
